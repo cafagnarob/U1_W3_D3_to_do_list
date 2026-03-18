@@ -22,7 +22,8 @@ const deleteCard = function (e) {
 const linecard = function (e) {
   const button = e.target
   const article = button.parentElement
-  article.style.textDecoration = "line-through"
+  const p = article.querySelector("p")
+  p.style.textDecoration = "line-through"
 }
 
 const form = document.getElementById("new-activity-form")

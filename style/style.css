@@ -28,11 +28,18 @@ input {
   border-bottom: 1px solid black;
 }
 
-div button {
+main button {
   font-size: 1.5em;
   cursor: pointer;
   margin: 0px 30px;
   padding: 0px 20px;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+article button {
+  cursor: pointer;
 }
 
 h1 {
@@ -51,10 +58,11 @@ h1 {
   width: 500px;
   height: 600px;
   padding: 80px;
+  margin: 0 auto;
 }
 
 article p {
-  margin: 28px 200px 28px 28px;
+  margin: 28px 200px 0 28px;
   font-size: 1.5em;
   display: inline-block;
 }
@@ -62,7 +70,7 @@ article p {
 article button {
   background-color: transparent;
   border: none;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0;
   padding: 0 10px;
 }
