@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap");
+
+body {
+  background-color: rgb(218, 217, 217);
+  text-align: center;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav button {
+  background-color: transparent;
+  font-size: 1.2em;
+  border: 0px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+
+div button {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0px 30px;
+  padding: 0px 20px;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px;
+}
+
+#notebook {
+  background-image: url(../asset/notebook-background-1459-x-1600-m07w2vkkolr4yi49.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 600px;
+  padding: 80px;
+}
+
+article p {
+  margin: 28px 200px 28px 28px;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+article button {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 10px;
+}
+
+#save-activity {
+  max-height: 100%;
+}
