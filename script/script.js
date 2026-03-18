@@ -31,7 +31,11 @@ const linecard = function (e) {
   const button = e.target
   const article = button.parentElement
   const p = article.querySelector("p")
-  p.style.textDecoration = "line-through"
+  if (p.style.textDecoration === "line-through") {
+    p.style.textDecoration = "none"
+  } else {
+    p.style.textDecoration = "line-through"
+  }
 }
 
 const form = document.getElementById("new-activity-form")
