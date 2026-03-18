@@ -63,7 +63,6 @@ h1 {
 }
 
 article p {
-  margin: 28px 200px 0 28px;
   font-size: 1.5em;
   display: inline-block;
 }
@@ -76,6 +75,9 @@ article button {
   padding: 0 10px;
 }
 
-#save-activity {
-  max-height: 100%;
+.activity-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-left: 30px;
 }

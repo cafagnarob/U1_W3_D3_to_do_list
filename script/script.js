@@ -13,9 +13,13 @@ const formSubmitFn = function (e) {
     return
   }
   section.innerHTML += `<article class="activity-card">
-            <p>${activity} </p>
-            <button onclick="deleteCard(event)">🗑️</button>
-            <button onclick="linecard(event)"> ✅</button>
+  <div>
+  <p>${activity} </p>
+  </div>
+  <div>
+        <button onclick="deleteCard(event)">🗑️</button>
+        <button onclick="linecard(event)"> ✅</button>
+    </div>
         </article>`
 
   form.reset()
@@ -24,13 +28,16 @@ const formSubmitFn = function (e) {
 const deleteCard = function (e) {
   const button = e.target
   const article = button.parentElement
-  article.remove()
+  const article2 = article.parentElement
+  article2.remove()
 }
 
 const linecard = function (e) {
   const button = e.target
   const article = button.parentElement
-  const p = article.querySelector("p")
+  const article2 = article.parentElement
+  const p = article2.querySelector("p")
+
   if (p.style.textDecoration === "line-through") {
     p.style.textDecoration = "none"
   } else {
