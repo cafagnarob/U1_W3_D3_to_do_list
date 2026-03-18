@@ -1,3 +1,5 @@
+const maxItems = 9
+
 const formSubmitFn = function (e) {
   e.preventDefault()
   const activityInput = document.getElementById("activity")
@@ -5,11 +7,17 @@ const formSubmitFn = function (e) {
   const card = document.createElement("article")
   card.classList.add("activity-card")
   const section = document.getElementById("saved-activity")
+
+  if (section.children.length >= maxItems) {
+    alert("hai troppe cose da fare! Relax")
+    return
+  }
   section.innerHTML += `<article class="activity-card">
             <p>${activity} </p>
             <button onclick="deleteCard(event)">🗑️</button>
-            <button onclick="linecard(event)"> Done</button>
+            <button onclick="linecard(event)"> ✅</button>
         </article>`
+
   form.reset()
 }
 
