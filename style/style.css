@@ -80,4 +80,5 @@ article button {
   justify-content: space-between;
   margin-bottom: 28px;
   padding-left: 30px;
+  flex-wrap: nowrap;
 }
