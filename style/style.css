@@ -65,6 +65,7 @@ h1 {
 article p {
   font-size: 1.5em;
   display: inline-block;
+  padding-right: 100px;
 }
 
 article button {
